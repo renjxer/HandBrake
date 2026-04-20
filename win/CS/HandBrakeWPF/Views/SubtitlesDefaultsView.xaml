@@ -111,7 +111,7 @@
             </Grid>
 
             <!-- Options -->
-            <TextBlock Grid.Row="3" Grid.Column="0" Text="Options: " Margin="0,20,0,0" />
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static Properties:Resources.Manual_Options}" Margin="0,20,0,0" />
             <CheckBox Content="{x:Static Properties:Resources.SubtitlesView_AddCC}" Grid.Row="3" Grid.Column="1"  Margin="0,20,0,0" 
                           HorizontalAlignment="Left" IsChecked="{Binding SubtitleBehaviours.AddClosedCaptions}"/>
             <CheckBox Content="{x:Static Properties:Resources.SubtitlesView_AddForeignAudioSearch}"  Grid.Column="1" Grid.Row="4" Margin="0,5,0,0" 
