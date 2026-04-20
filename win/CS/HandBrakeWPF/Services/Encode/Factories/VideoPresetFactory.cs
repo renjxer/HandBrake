@@ -12,6 +12,7 @@ namespace HandBrakeWPF.Services.Encode.Factories
     /// <summary>
     /// The video tune factory.
     /// </summary>
+    using HandBrakeWPF.Properties;
     public class VideoPresetFactory
     {
         /// <summary>
@@ -35,32 +36,32 @@ namespace HandBrakeWPF.Services.Encode.Factories
             switch (shortName)
             {
                 case "ultrafast":
-                    return "Ultrafast";
+                    return Resources.VideoPresetFactory_Ultrafast;
                 case "superfast":
-                    return "Superfast";
+                    return Resources.VideoPresetFactory_Superfast;
                 case "veryfast":
-                    return "Veryfast";
+                    return Resources.VideoPresetFactory_Veryfast;
                 case "faster":
-                    return "Faster";
+                    return Resources.VideoPresetFactory_Faster;
                 case "fast":
-                    return "Fast";
+                    return Resources.VideoPresetFactory_Fast;
                 case "medium":
-                    return "Medium";
+                    return Resources.VideoPresetFactory_Medium;
                 case "slow":
-                    return "Slow";
+                    return Resources.VideoPresetFactory_Slow;
                 case "slower":
-                    return "Slower";
+                    return Resources.VideoPresetFactory_Slower;
                 case "veryslow":
-                    return "VerySlow";
+                    return Resources.VideoPresetFactory_VerySlow;
                 case "placebo":
-                    return "Placebo";
+                    return Resources.VideoPresetFactory_Placebo;
 
                 case "balanced":
-                    return "Balanced";
+                    return Resources.VideoPresetFactory_Balanced;
                 case "speed":
-                    return "Speed";
+                    return Resources.VideoPresetFactory_Speed;
                 case "quality":
-                    return "Quality";
+                    return Resources.VideoPresetFactory_Quality;
             }
 
             return shortName;
@@ -71,21 +72,21 @@ namespace HandBrakeWPF.Services.Encode.Factories
             switch (shortName)
             {
                 case "fastest":
-                    return "Fastest";
+                    return Resources.VideoPresetFactory_Fastest;
                 case "faster":
-                    return "Faster";
+                    return Resources.VideoPresetFactory_Faster;
                 case "fast":
-                    return "Fast";
+                    return Resources.VideoPresetFactory_Fast;
                 case "medium":
-                    return "Medium";
+                    return Resources.VideoPresetFactory_Medium;
                 case "slow":
-                    return "Slow";
+                    return Resources.VideoPresetFactory_Slow;
                 case "slower":
-                    return "Slower";
+                    return Resources.VideoPresetFactory_Slower;
                 case "slowest":
-                    return "Slowest";
+                    return Resources.VideoPresetFactory_Slowest;
                 case null:
-                    return "Medium";
+                    return Resources.VideoPresetFactory_Medium;
             }
 
             return shortName;
