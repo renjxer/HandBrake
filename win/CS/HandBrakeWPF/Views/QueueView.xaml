@@ -532,7 +532,7 @@
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock FontWeight="{x:Static Properties:Resources.Manual_Status}" Text="Status:" VerticalAlignment="Top"  Grid.Row="0" />
+                                    <TextBlock FontWeight="Bold" Text="{x:Static Properties:Resources.Manual_Status}" VerticalAlignment="Top"  Grid.Row="0" />
                                     <TextBlock Text="{Binding SelectedTask.JobProgress.JobStatus}" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" TextTrimming="CharacterEllipsis" Grid.Row="0" Grid.Column="1" />
 
                                     <TextBlock FontWeight="Bold" Text="{x:Static Properties:Resources.QueueView_Source}" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" />
