@@ -791,7 +791,7 @@
                              Panel.ZIndex="25"
                              Message="{Binding AlertWindowHeader}"
                              SubMessage="{Binding AlertWindowText}"
-                             ActionText="OK"
+                             ActionText="{x:Static Properties:Resources.Manual_OK}"
                              DefaultAction="{Binding AlertWindowClose}">
 
         </Controls:AlertPanel>
