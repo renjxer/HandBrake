@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -1030,7 +1030,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <value>预览</value>
   </data>
   <data name="MainView_ProgressStatusWithTask" xml:space="preserve">
-    <value>{0}, {1:00.00}%, 剩余时间：{2}</value>
+    <value>{0}, {1:00.00}%, 剩余时间: {2}</value>
   </data>
   <data name="MainView_Range" xml:space="preserve">
     <value>范围：</value>
@@ -2290,7 +2290,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <value>停止</value>
   </data>
   <data name="String1" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="PresetService_CategoryAlreadyExists" xml:space="preserve">
     <value>您输入的类别名称已存在，请选择一个不同的名称。</value>
@@ -2858,16 +2858,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
     <value>打开日志窗口</value>
   </data>
   <data name="OptionsView_EnableNvencEncoding" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="OptionsView_EnableQuicksyncEncoding" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="OptionsView_EnableVceEncoding" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="OptionsView_ChoiceOfEncoderHint" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="AnamorphicMode_Custom" xml:space="preserve">
     <value>自定义</value>
@@ -3032,6 +3032,100 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
   </data>
   <data name="QueueView_ExportSelected" xml:space="preserve">
     <value>导出队列（已选项目）</value>
+  </data>
+  <data name="VideoView_CopyFullQuery" xml:space="preserve">
+    <value>复制完整查询</value>
+  </data>
+  <data name="QueueViewModel_StopSelectedJobConfirmation" xml:space="preserve">
+    <value>当前有作业正在运行。你是否希望在停止队列之前先完成这些作业？</value>
+  </data>
+  <data name="Manual_OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Manual_Job" xml:space="preserve">
+    <value>作业</value>
+  </data>
+  <data name="Manual_Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Manual_Audio" xml:space="preserve">
+    <value>音频</value>
+  </data>
+  <data name="Manual_Log_Extended" xml:space="preserve">
+    <value>详尽</value>
+  </data>
+  <data name="Manual_Log_Standard" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="Manual_Log_Minimised" xml:space="preserve">
+    <value>最低限度</value>
+  </data>
+  <data name="Manual_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="Manual_Options" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="Manual_Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Manual_to" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Manual_Subtitles" xml:space="preserve">
+    <value>字幕</value>
+  </data>
+  <data name="Manual_SetDefault" xml:space="preserve">
+    <value>设为默认</value>
+  </data>
+  <data name="OptionsViewModel_64bitAvailable" xml:space="preserve">
+    <value>您的系统支持64位版本的HandBrake！与32位版本相比，64位版本在性能和稳定性方面有所提升。
+    请查看网站以获取发布说明。</value>
+  </data>
+  <data name="VideoPresetFactory_Balanced" xml:space="preserve">
+    <value>均衡</value>
+  </data>
+  <data name="VideoPresetFactory_Fast" xml:space="preserve">
+    <value>快</value>
+  </data>
+  <data name="VideoPresetFactory_Faster" xml:space="preserve">
+    <value>较快</value>
+  </data>
+  <data name="VideoPresetFactory_Fastest" xml:space="preserve">
+    <value>最快</value>
+  </data>
+  <data name="VideoPresetFactory_Medium" xml:space="preserve">
+    <value>中等</value>
+  </data>
+  <data name="VideoPresetFactory_Placebo" xml:space="preserve">
+    <value>最高品质</value>
+  </data>
+  <data name="VideoPresetFactory_Quality" xml:space="preserve">
+    <value>品质</value>
+  </data>
+  <data name="VideoPresetFactory_Slow" xml:space="preserve">
+    <value>慢</value>
+  </data>
+  <data name="VideoPresetFactory_Slower" xml:space="preserve">
+    <value>较慢</value>
+  </data>
+  <data name="VideoPresetFactory_Slowest" xml:space="preserve">
+    <value>最慢</value>
+  </data>
+  <data name="VideoPresetFactory_Speed" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="VideoPresetFactory_Superfast" xml:space="preserve">
+    <value>超快</value>
+  </data>
+  <data name="VideoPresetFactory_Veryfast" xml:space="preserve">
+    <value>非常快</value>
+  </data>
+  <data name="VideoPresetFactory_VerySlow" xml:space="preserve">
+    <value>非常慢</value>
+  </data>
+  <data name="VideoPresetFactory_Ultrafast" xml:space="preserve">
+    <value>极快</value>
   </data>
   <data name="VideoView_SameAsSource" xml:space="preserve">
     <value>与源视频相同</value>

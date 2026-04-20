@@ -445,6 +445,10 @@ The Activity log may have further information.</value>
   <data name="OptionsViewModel_NewUpdate" xml:space="preserve">
     <value>HandBrake {0} is now Available! Please check the website for release notes.</value>
   </data>
+  <data name="OptionsViewModel_64bitAvailable" xml:space="preserve">
+    <value>Your system supports the 64bit version of HandBrake! This offers performance and stability improvements over this 32bit version.
+    Please check the website for release notes.</value>
+  </data>
   <data name="OptionsViewModel_NoNewUpdates" xml:space="preserve">
     <value>There are no new updates at this time.</value>
   </data>
@@ -905,7 +909,7 @@ Hint: File overwrite behaviour can be controlled in preferences. </value>
   <data name="Generic_Add" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="Generic_Cancel" xml:space="preserve">
+  <data name="MainView_Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
   <data name="Generic_Clear" xml:space="preserve">
@@ -1118,9 +1122,6 @@ Hint: File overwrite behaviour can be controlled in preferences. </value>
   <data name="MetaDataView_Title" xml:space="preserve">
     <value>Metadata</value>
   </data>
-  <data name="OptionsView_EnableDirectXDecoding" xml:space="preserve">
-    <value>Allow use of DirectX Decoding</value>
-  </data>
   <data name="OptionsView_InvalidFileFormatChars" xml:space="preserve">
     <value>The file format entered contained invalid characters. These have been removed. </value>
   </data>
@@ -1216,9 +1217,6 @@ Hint: File overwrite behaviour can be controlled in preferences. </value>
   </data>
   <data name="Options_MinTitleScanLength" xml:space="preserve">
     <value>Minimum DVD and Blu-ray title duration in seconds. Shorter titles will be skipped:</value>
-  </data>
-  <data name="Options_KeepDuplicateTitles" xml:space="preserve">
-    <value>Keep duplicate titles on Blu-ray sources (Requires Restart)</value>
   </data>
   <data name="Options_MP4FileExtension" xml:space="preserve">
     <value>MP4 File Extension:</value>
@@ -1641,9 +1639,6 @@ VLC and MPC-HC are supported. Other players may also work but are not validated.
   <data name="VideoView_Codec" xml:space="preserve">
     <value>Video Encoder:</value>
   </data>
-  <data name="VideoView_ColourRange" xml:space="preserve">
-    <value>Color Range:</value>
-  </data>
   <data name="VideoView_ConstantFramerate" xml:space="preserve">
     <value>Constant Framerate</value>
   </data>
@@ -1911,9 +1906,6 @@ You can drag/drop or enter the text above.</value>
   </data>
   <data name="FiltersViewAuto_DeblockTune" xml:space="preserve">
     <value>Deblock Tune</value>
-  </data>
-  <data name="OptionsView_EncodeNotes" xml:space="preserve">
-    <value>Note: Not all hardware encoders have extra preferences. All available and supported hardware encoders on this system will be available for selection on the video tab under the video encoder dropdown.</value>
   </data>
   <data name="Queue_RecoverQueueQuestionPlural" xml:space="preserve">
     <value>HandBrake has detected multiple unfinished queue files. These will be from multiple instances of HandBrake running. Would you like to recover all unfinished jobs?</value>
@@ -2742,17 +2734,128 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="AudioView_Source" xml:space="preserve">
     <value>Source</value>
   </data>
-  <data name="AboutView_Documentation" xml:space="preserve">
-    <value>Documentation:</value>
+  <data name="AboutView_Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Manual_Log_Minimised" xml:space="preserve">
+    <value>Minimised</value>
+  </data>
+  <data name="VideoPresetFactory_Ultrafast" xml:space="preserve">
+    <value>Ultra fast</value>
+  </data>
+  <data name="VideoPresetFactory_Superfast" xml:space="preserve">
+    <value>Super fast</value>
+  </data>
+  <data name="VideoPresetFactory_Veryfast" xml:space="preserve">
+    <value>Very fast</value>
+  </data>
+  <data name="VideoPresetFactory_Faster" xml:space="preserve">
+    <value>Faster</value>
+  </data>
+  <data name="VideoPresetFactory_Fast" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="VideoPresetFactory_Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="VideoPresetFactory_Slow" xml:space="preserve">
+    <value>Slow</value>
+  </data>
+  <data name="VideoPresetFactory_Slower" xml:space="preserve">
+    <value>Slower</value>
+  </data>
+  <data name="VideoPresetFactory_VerySlow" xml:space="preserve">
+    <value>Very Slow</value>
+  </data>
+  <data name="VideoPresetFactory_Placebo" xml:space="preserve">
+    <value>Placebo</value>
+  </data>
+  <data name="VideoPresetFactory_Balanced" xml:space="preserve">
+    <value>Balanced</value>
+  </data>
+  <data name="VideoPresetFactory_Speed" xml:space="preserve">
+    <value>Speed</value>
+  </data>
+  <data name="VideoPresetFactory_Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="VideoPresetFactory_Fastest" xml:space="preserve">
+    <value>Fastest</value>
+  </data>
+  <data name="VideoPresetFactory_Slowest" xml:space="preserve">
+    <value>Slowest</value>
+  </data>
+  <data name="Manual_Log_Extended" xml:space="preserve">
+    <value>Extended</value>
+  </data>
+  <data name="Manual_Log_Standard" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Manual_Audio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="LogView_ChooseLogFile" xml:space="preserve">
+    <value>Choose log file :</value>
+  </data>
+  <data name="MainView_DebugMenu" xml:space="preserve">
+    <value>Debug Menu</value>
+  </data>
+  <data name="PictureSettingsView_OptimalSize" xml:space="preserve">
+    <value>Optimal Size</value>
+  </data>
+  <data name="Manual_SetDefault" xml:space="preserve">
+    <value>Set Default</value>
+  </data>
+  <data name="Manual_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Manual_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Manual_Subtitles" xml:space="preserve">
+    <value>Subtitles</value>
+  </data>
+  <data name="MainView_DebugExportData" xml:space="preserve">
+    <value>Export debug file (JSON)</value>
+  </data>
+  <data name="PictureSettingsView_AllowUpscaling" xml:space="preserve">
+    <value>Allow Up scaling</value>
+  </data>
+  <data name="Manual_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="MainView_DebugImportData" xml:space="preserve">
+    <value>Import debug file (JSON)</value>
+  </data>
+  <data name="Manual_to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="MainView_DebugQualitySweep" xml:space="preserve">
+    <value>Add to Queue - Quality Sweep</value>
+  </data>
+  <data name="Manual_Job" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="Manual_Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="MainView_OpenLog" xml:space="preserve">
+    <value>Open Log Window</value>
+  </data>
+  <data name="MainView_ScanningStatus" xml:space="preserve">
+    <value>Please wait ...</value>
+  </data>
+  <data name="Manual_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="QueueViewModel_StopSelectedJobConfirmation" xml:space="preserve">
+    <value>There are currently jobs running. Would you like to complete the current jobs before stopping the queue?</value>
   </data>
   <data name="AboutView_GithubTracker" xml:space="preserve">
     <value>GitHub Issue Tracker:</value>
   </data>
-  <data name="AboutView_Website" xml:space="preserve">
-    <value>Website: </value>
-  </data>
-  <data name="MainView_PresetClone" xml:space="preserve">
-    <value>Clone Preset</value>
+  <data name="AboutView_Documentation" xml:space="preserve">
+    <value>Documentation:</value>
   </data>
   <data name="PresetPane_MoveDown" xml:space="preserve">
     <value>Move Down</value>
@@ -2766,11 +2869,11 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="PresetPane_MoveUp" xml:space="preserve">
     <value>Move Up</value>
   </data>
+  <data name="MainView_PresetClone" xml:space="preserve">
+    <value>Clone Preset</value>
+  </data>
   <data name="QueueViewModel_StopButContinueJob" xml:space="preserve">
     <value>There are currently jobs running. Would you like to complete the current jobs before stopping the queue?</value>
-  </data>
-  <data name="Options_AddExt" xml:space="preserve">
-    <value>Add Extension</value>
   </data>
   <data name="Options_ExcludeExtensions" xml:space="preserve">
     <value>Exclude File Extensions:</value>
@@ -2787,6 +2890,9 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="Options_RecursiveFolderScan" xml:space="preserve">
     <value>Recursively scan directories when using the folder scan mode.</value>
   </data>
+  <data name="Options_AddExt" xml:space="preserve">
+    <value>Add Extension</value>
+  </data>
   <data name="AudioView_AudioQuality" xml:space="preserve">
     <value>Audio Track Quality</value>
   </data>
@@ -2801,6 +2907,12 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   </data>
   <data name="AudioView_QualityMode" xml:space="preserve">
     <value>Audio Encoder Quality Mode</value>
+  </data>
+  <data name="LogView_AutoScrolling" xml:space="preserve">
+    <value>Auto Scroll</value>
+  </data>
+  <data name="VideoView_CopyFullQuery" xml:space="preserve">
+    <value>Copy Full Query</value>
   </data>
   <data name="QueueView_AdvancedQueueDisplay" xml:space="preserve">
     <value>Use Advanced Queue View</value>
@@ -2841,38 +2953,17 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="QueueView_EncodeShutdown" xml:space="preserve">
     <value>Shutting Down Encode ...</value>
   </data>
-  <data name="PictureSettingsView_AllowUpscaling" xml:space="preserve">
-    <value>Allow Upscaling</value>
+  <data name="Options_KeepDuplicateTitles" xml:space="preserve">
+    <value>Keep duplicate titles on Blu-ray sources (Requires Restart)</value>
   </data>
-  <data name="PictureSettingsView_OptimalSize" xml:space="preserve">
-    <value>Optimal Size</value>
+  <data name="OptionsView_EnableDirectXDecoding" xml:space="preserve">
+    <value>Allow use of DirectX Decoding</value>
   </data>
   <data name="OptionsView_Available" xml:space="preserve">
     <value>Available on this system.</value>
   </data>
   <data name="OptionsView_NotAvailable" xml:space="preserve">
     <value>Not available on this system.</value>
-  </data>
-  <data name="MainView_ScanningStatus" xml:space="preserve">
-    <value>Please wait ...</value>
-  </data>
-  <data name="MainView_Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="MainView_OpenLog" xml:space="preserve">
-    <value>Open Log Window</value>
-  </data>
-  <data name="OptionsView_EnableNvencEncoding" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OptionsView_EnableQuicksyncEncoding" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OptionsView_EnableVceEncoding" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OptionsView_ChoiceOfEncoderHint" xml:space="preserve">
-    <value />
   </data>
   <data name="AnamorphicMode_Custom" xml:space="preserve">
     <value>Custom</value>
@@ -2910,8 +3001,14 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="Sharpen_Off" xml:space="preserve">
     <value>Off</value>
   </data>
+  <data name="OptionsView_EncodeNotes" xml:space="preserve">
+    <value>Note: Not all hardware encoders have extra preferences. All available and supported hardware encoders on this system will be available for selection on the video tab under the video encoder dropdown.</value>
+  </data>
   <data name="Options_MaxTitleScanDuration" xml:space="preserve">
     <value>Maximum DVD and Blu-ray title duration in seconds. Longer titles will be skipped:</value>
+  </data>
+  <data name="Generic_Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="DefaultRangeMode_Chapters" xml:space="preserve">
     <value>Chapters</value>
@@ -2942,24 +3039,6 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   </data>
   <data name="MetaData_Add" xml:space="preserve">
     <value>Add Row</value>
-  </data>
-  <data name="MainView_DebugMenu" xml:space="preserve">
-    <value>Debug Menu</value>
-  </data>
-  <data name="MainView_DebugExportData" xml:space="preserve">
-    <value>Export debug file (JSON)</value>
-  </data>
-  <data name="MainView_DebugImportData" xml:space="preserve">
-    <value>Import debug file (JSON)</value>
-  </data>
-  <data name="MainView_DebugQualitySweep" xml:space="preserve">
-    <value>Add to Queue - Quality Sweep</value>
-  </data>
-  <data name="LogView_ChooseLogFile" xml:space="preserve">
-    <value>Choose log file :</value>
-  </data>
-  <data name="LogView_AutoScrolling" xml:space="preserve">
-    <value>Auto Scroll</value>
   </data>
   <data name="LogLevel_Minimised" xml:space="preserve">
     <value>Minimised</value>
@@ -2997,14 +3076,8 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   <data name="SubtitlesDefaultsView_PassthruTrackName" xml:space="preserve">
     <value>Passthru Track Names</value>
   </data>
-  <data name="VideoColourRange_SameAsSource" xml:space="preserve">
-    <value>Same as source</value>
-  </data>
-  <data name="VideoColourRange_Full" xml:space="preserve">
-    <value>Full</value>
-  </data>
-  <data name="VideoColourRange_Limited" xml:space="preserve">
-    <value>Limited</value>
+  <data name="VideoView_ColourRange" xml:space="preserve">
+    <value>Color Range:</value>
   </data>
   <data name="DarkTheme_Modern" xml:space="preserve">
     <value>Modern</value>
@@ -3032,7 +3105,7 @@ To allow multiple simultaneous encodes, turn on "Process Isolation" in Tools Men
   </data>
   <data name="QueueViewModel_CancelErrorWillBeCleared" xml:space="preserve">
     <value>The queue currently has jobs which are in a Cancelled or Errored State. These will be cleared when the queue starts.  
-
+﻿
 Do you wish to proceed?</value>
   </data>
   <data name="QueueView_ExportSelected" xml:space="preserve">
