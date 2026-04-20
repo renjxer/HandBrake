@@ -93,11 +93,11 @@
                                     AutomationProperties.Name="{x:Static Properties:Resources.PictureSettingsView_MaxHeight}" Visibility="{Binding IsCustomMaxRes, Converter={StaticResource boolToVisConverter}}" />
             </StackPanel>
   
-            <TextBlock Text="Audio:" Grid.Row="6" VerticalAlignment="Center" Margin="0,15,0,0" />
+            <TextBlock Text="{x:Static Properties:Resources.Manual_Audio}" Grid.Row="6" VerticalAlignment="Center" Margin="0,15,0,0" />
             <Button Content="{x:Static Properties:Resources.AudioViewModel_ConfigureDefaults}" Grid.Row="6"  Grid.Column="1" HorizontalAlignment="Left" Margin="0,15,0,0" Padding="8,2"
                     Command="{Binding RelayCommand}" CommandParameter="EditAudioDefaults" />
             
-            <TextBlock Text="Subtitles:" Grid.Row="7" VerticalAlignment="Center" Margin="0,5,0,0" />
+            <TextBlock Text="{x:Static Properties:Resources.Manual_Subtitles}" Grid.Row="7" VerticalAlignment="Center" Margin="0,5,0,0" />
             <Button Content="{x:Static Properties:Resources.SubtitlesViewModel_ConfigureDefaults}" Grid.Row="7"  Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Padding="8,2"
                     Command="{Binding RelayCommand}" CommandParameter="EditSubtitleDefaults" />
 
